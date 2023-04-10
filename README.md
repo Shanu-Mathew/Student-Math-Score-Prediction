@@ -1,1 +1,1 @@
-#End to End MAchine Learning
+#End to End Machine Learning
