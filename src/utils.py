@@ -1,6 +1,7 @@
 import os
 import sys
 import joblib
+import dill
 
 import numpy as np
 import pandas as pd
@@ -45,4 +46,13 @@ def evaluate_model(X_train,Y_train,X_test,Y_test,models,param):
         
         return report
     except Exception as e:
+        raise CustomException(e,sys)
+
+
+def load_object(file_path):
+    try:
+        with open(file_path,'rb') as file_obj:
+            return joblib.load(file_obj)
+    
+    except:
         raise CustomException(e,sys)
