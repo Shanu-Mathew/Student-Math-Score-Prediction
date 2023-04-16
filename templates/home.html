@@ -1,14 +1,16 @@
 <html>
+    <head><h1><center>Student Exam Performance Indicator</center></h1>
+        <link rel="stylesheet" href="home.css">
+    </head>
 <body>
-    <div class="login">
-       <h1><center>Student Exam Performance Indicator</center></h1>
-   
-       <form action="{{ url_for('predict_datapoint')}}" method="post">
-        <h3>
-            <legend>Student Exam Performance Prediction</legend>
-        </h3>
-        <div class="mb-3">
-            <label class="form-label">Gender</label>
+    
+<div class="wrapper"> 
+    <div class="title">
+        Data Input Form
+    </div>  
+       <form class="form" action="{{ url_for('predict_datapoint')}}" method="post">
+        <div class="input_field">
+            <label class="form-label">Gender:</label>
             <select class="form-control" name="gender" placeholder="Enter you Gender" required>
                 <option class="placeholder" selected disabled value="">Select your Gender</option>
                 <option value="male">
@@ -19,8 +21,8 @@
                 </option>
             </select>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Race or Ethnicity</label>
+        <div class="input_field">
+            <label class="form-label">Race or Ethnicity:</label>
             <select class="form-control" name="ethnicity" placeholder="Enter you ethnicity" required>
                 <option class="placeholder" selected disabled value="">Select Ethnicity</option>
                 <option value="Group A">
@@ -40,48 +42,48 @@
                 </option>
             </select>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Parental Level of Education</label>
+        <div class="input_field">
+            <label class="form-label">Parental Level of Education:</label>
             <select class="form-control" name="parental_level_of_education"
                 placeholder="Enter you Parent Education" required>
                 <option class="placeholder" selected disabled value="">Select Parent Education</option>
                 <option value="Associate's Degree">
-                    associate's degree
+                    Associate's Degree
                 </option>
                 <option value="Bachelor's Degree">
-                    bachelor's degree
+                    Bachelor's Degree
                 </option>
                 <option value="High School">
-                    high school
+                    High School
                 </option>
                 <option value="Master's Degree">
-                    master's degree
+                    Master's Degree
                 </option>
                 <option value="Some College">
-                    some college
+                    Some College
                 </option>
                 <option value="Some High School">
-                    some high school
+                    Some High School
                 </option>
             </select>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Lunch Type</label>
+        <div class="input_field">
+            <label class="form-label">Lunch Type:</label>
             <select class="form-control" name="lunch" placeholder="Enter you Lunch" required>
                 <option class="placeholder" selected disabled value="">Select Lunch Type</option>
                 <option value="Free/reduced">
-                    free/reduced
+                    Free/Reduced
                 </option>
                 <option value="Standard">
-                    standard
+                    Standard
                 </option>
             </select>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Test preparation Course</label>
+        <div class="input_field">
+            <label class="form-label">Test Preparation Course:</label>
             <select class="form-control" name="test_preparation_course" placeholder="Enter you Course"
                 required>
-                <option class="placeholder" selected disabled value="">Select Test_course</option>
+                <option class="placeholder" selected disabled value="">Select Test_Course</option>
                 <option value="None">
                     None
                 </option>
@@ -90,23 +92,23 @@
                 </option>
             </select>
         </div>
-        <div class="mb-3">
-            <label class="form-label">Writing Score out of 100</label>
+        <div class="input_field">
+            <label class="form-label">Writing Score (Out of 100):</label>
             <input class="form-control" type="number" name="reading_score"
                 placeholder="Enter your Reading score" min='0' max='100' />
         </div>
-        <div class="mb-3">
-            <label class="form-label">Reading Score out of 100</label>
+        <div class="input_field">
+            <label class="form-label">Reading Score (Out of 100):</label>
             <input class="form-control" type="number" name="writing_score"
                 placeholder="Enter your Reading Score" min='0' max='100' />
         </div>
-        <div class="mb-3">
-        <center> 
+        <div class="input_field"> 
             <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
-        </center>
+        
            
         </div>
     </form>
+</div>
     <h2>
        <b>The prediction is {{results}}</b>
     </h2>
