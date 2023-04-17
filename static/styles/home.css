@@ -5,11 +5,11 @@
     box-sizing: border-box;
     font-family: 'Monteserrat',sans-serif;
 }
-head{
-    font-size:24px;
+.heading{
+    font-size:40px;
     font-weight: 700;
     margin-bottom: 25px;
-    color:#fec107;
+    color:#000000;
     font-weight: 800;
     text-align: center;
 }
@@ -29,7 +29,6 @@ body{
 }
 .wrapper .title{
     font-size:24px;
-    font-weight: 700;
     margin-bottom: 25px;
     color:#fec107;
     font-weight: 800;
@@ -67,4 +66,6 @@ body{
     border:1px solid #d5dbd9;
     font-size:15px;
     padding:8px 10px;
+    border-radius: 3px;
+    outline:none;
 }
