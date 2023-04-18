@@ -6,16 +6,21 @@
     font-family: 'Monteserrat',sans-serif;
 }
 .heading{
-    font-size:40px;
+    font-size:50    px;   
     font-weight: 700;
     margin-bottom: 25px;
-    color:#000000;
+    color:#feffff;
     font-weight: 800;
     text-align: center;
+    background-image: linear-gradient(to bottom left, #feffff, #fec107);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 body{
     background: #fec107;
+    background-image: url("background.jpeg");
     padding:0 10px;
  }
 
@@ -24,8 +29,9 @@ body{
     width:100%;
     background:#fff;
     margin: 20px auto;
-    padding:30px; 
-    box-shadow: 10px 10px px rgba(0,0,0,0.125);   
+    padding:30px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.125);   
 }
 .wrapper .title{
     font-size:24px;
@@ -68,4 +74,16 @@ body{
     padding:8px 10px;
     border-radius: 3px;
     outline:none;
+}
+.results{
+    font-size:40px;
+    font-weight: 700;
+    font-family: ;
+    margin-bottom: 25px;
+    color:#feffff;
+    font-weight: 800;
+    background-image: linear-gradient(to bottom left, #feffff, #fec107);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
