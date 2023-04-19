@@ -31,7 +31,7 @@ body{
     margin: 20px auto;
     padding:30px;
     border-radius: 20px;
-    box-shadow: 10px 10px 5px rgba(0,0,0,0.125);   
+    box-shadow: 10px 10px 10px rgba(1,0,0,1);   
 }
 .wrapper .title{
     font-size:24px;
@@ -47,6 +47,7 @@ body{
     margin-bottom:15px;
     display:flex;  
     align-items: center;
+    box-shadow: 2px 0px 10px rgba(0,0,0,0.125);
 }
 .wrapper .form .input_field label{
     width:202px;
@@ -76,7 +77,7 @@ body{
     outline:none;
 }
 .results{
-    font-size:40px;
+    font-size:25px;
     font-weight: 700;
     font-family: ;
     margin-bottom: 25px;
