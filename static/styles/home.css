@@ -88,3 +88,6 @@ body{
     background-clip: text;
     -webkit-background-clip: text;
 }
+.music{
+    align-self: center;
+}
